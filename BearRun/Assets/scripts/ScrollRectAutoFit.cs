@@ -55,6 +55,6 @@ public class ScrollRectAutoFit : MonoBehaviour, IBeginDragHandler, IEndDragHandl
     }
     public void SessionsMove(float value)
     {
-        DOTween.To(() => scrollRect.horizontalScrollbar.value, v => scrollRect.horizontalScrollbar.value = v, value, 0.5f).SetEase(Ease.InOutQuad);
+        DOTween.To(() => scrollRect.horizontalScrollbar.value, v => scrollRect.horizontalScrollbar.value = v, value, 0.5f).SetEase(Ease.OutBounce);
     }
 }
