@@ -21,6 +21,7 @@ public static class MVC
 
     public static void RegisterView(View view)
     {
+        view.RegisterAttentionEvent();
         Views[view.name] = view;
     }
 
@@ -55,7 +56,7 @@ public static class MVC
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T GetView<T>() where T : Model
+    public static T GetView<T>() where T : View
     {
         foreach (var view in Views.Values)
         {
