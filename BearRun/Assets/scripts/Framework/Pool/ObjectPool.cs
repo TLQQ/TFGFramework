@@ -23,7 +23,7 @@ public class ObjectPool : MonoSingleton<ObjectPool>
     public GameObject Spawn(string Name,Transform trans)
     {
         SubPool pool = null;
-        if (m_pools.ContainsKey(Name))
+        if (!m_pools.ContainsKey(Name))
         {
             RegisterNew(Name,trans);
         }

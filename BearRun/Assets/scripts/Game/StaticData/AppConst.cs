@@ -14,4 +14,15 @@ public static class AppConst  {
     public const string E_EnterScene ="E_EnterScene";
     public const string E_StartUp = "E_StartUp";
     #endregion
+
+    #region View
+
+    public const string V_PlayerMove= "V_PlayerMove";
+
+    #endregion
+}
+
+public enum EDirection
+{
+    None,Up,Down,Right,Left
 }
